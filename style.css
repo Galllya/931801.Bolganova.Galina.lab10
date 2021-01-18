@@ -1,0 +1,145 @@
+﻿body {
+    background-color: black;
+    overflow: hidden;
+}
+
+#scena {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-size: auto;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+#scena:hover {
+    bottom: 5%;
+}
+
+.lampa {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: -1;
+    height: 30%;
+    margin-top: 5vh;
+}
+
+.lampa > img {
+    position: absolute;
+    background-size: auto;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.lampa > img:first-child {
+    height: 100%;
+    cursor: pointer;
+}
+
+#stick {
+    transition: margin 0.1s;
+    height: 8vh;
+    position: absolute;
+    margin: 2vh 0 5vh -2.5vh;
+    z-index: -2;
+}
+
+#trap {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-bottom: 80vh solid yellow;
+    border-left: 45vh solid transparent;
+    border-right: 45vh solid transparent;
+    margin-top: 11.18vh;
+    width: 10.5vh;
+}
+
+.magic_box {
+    position: absolute;
+    right: 20vh;
+    top: 15vh;
+    z-index: -1;
+    height: 20vh;
+}
+
+.magic_box > img {
+    height: 70%;
+    position: absolute;
+    background-size: auto;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#rabbit, #bird {
+    bottom:10vh;
+    transition: 0s;
+    margin-top: 5vh;
+    left: 0.5vh;
+    height: 45%;
+    z-index: -4;
+}
+
+#rabbit {
+    bottom: 25vh;
+}
+
+#witch {
+    left: 1vh;
+    position: absolute;
+    height: 100%;
+    background-size: auto;
+    z-index: -1;
+}
+
+#main {
+    opacity:0;
+    transition: opacity 0.2s;
+    position: absolute;
+    height: 38vh;
+    bottom: 10vh;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 80vh;
+    z-index:-3;
+}
+
+#wiht {
+    display: none;
+    transition: opacity 0.2s;
+    position: absolute;
+    height: 38vh;
+    bottom: 10vh;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 80vh;
+    z-index: 80;
+}
+
+.up {
+    right: 12vh;
+    bottom: 9vh;
+    width: 15vh;
+    height: 13.5vh;
+}
+
+.down { 
+    right: 14vh;
+    bottom: 28vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+.up, .down{
+    position: absolute;
+    z-index: 0;
+    cursor: pointer
+}
